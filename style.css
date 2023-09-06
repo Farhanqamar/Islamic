@@ -1,0 +1,670 @@
+.carousel .w-100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.carousel-caption h2{
+    margin-bottom: 20px;
+    color: white;
+}
+.carousel-caption h4{
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+}
+.carousel .btn-primary{
+    margin-bottom: 150px;
+    border-radius: 38px;
+    
+}
+.carousel-inner img{
+    opacity: .8;
+}
+/* Logo style */
+
+nav{
+  height: 65px;
+  font-size: 17px;
+  
+}
+nav a img{
+    width: 150px;
+    height: 60px;
+}
+
+
+
+
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* nav links style */
+
+.collapse a{
+  margin: 20px;
+}
+
+/* Apply a background color to the entire section */
+section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+/* Style the pillar boxes */
+.plr-box {
+    background-color: #fff;
+    border: 10px solid #dfb630; /* Light border color */
+    padding: 0; /* No padding within the box */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px 10px; /* Make the boxes round */
+    transition: box-shadow 0.3s, transform 0.3s;
+    overflow: hidden; /* To ensure content doesn't overflow */
+    position: relative; /* Add position for absolute positioning */
+}
+
+.plr-img {
+    cursor: pointer;
+    position: absolute;
+    top: -20px; /* Adjust to position the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dfb630; /* Orange color */    
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.plr-img img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.plr-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.plr-box h4 {
+    font-size: 18px;
+    color: #141010;
+    margin-bottom: 10px;
+    
+}
+
+.pilr-info p {
+    font-size: 14px;
+    color: #777;
+    
+}
+
+/* Add hover effect with orange color */
+.plr-box:hover {
+    background-color:#ddbd53;
+    
+}
+
+.plr-box:hover .pilr-info h4,
+.plr-box:hover .pilr-info p {
+    color: #fef9f9;
+    
+}
+
+
+/* boxes image style */
+.pilr-info img{
+    width: 100px;
+    height: 100px;
+}
+
+.section-bg {
+    background-image: url('Images/mousq.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+.section-content {
+    max-width: 600px;
+    
+}
+
+.image-1{
+    /* background-image: url('Images/islam.png');
+    background-size: cover;
+    background-position: center; */
+    color: white;
+    padding: 100px 0;
+}
+
+
+.cool h3,p{
+    color: #0a0a0a;
+    font-weight: 600;
+}
+.cool p{
+    font-size: 20px;
+}
+.cool h1{
+    color: #dfb630;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.cool button{
+    color: #000000;
+    border:2px solid #2a486c;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .9s ease;
+}
+.cool button:hover{
+    padding: 12px 35px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #2a486c;
+
+}
+
+
+/* home bouttens style */
+
+/* h4 button .btn-cool{
+  color: #000000;
+  border:2px solid #dfb630;
+  margin-top: 50px;
+  margin-left: 450px;
+  border-radius: 40px;
+  padding: 12px 35px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: .9s ease;
+}
+.carousel .carousel-item button .btn-cool:hover{
+  padding: 12px 35px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #dfb630;
+} */
+
+/* Your custom CSS styles */
+.section {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    padding: 50px 0;
+    width: 100%;
+    height: 420px;
+    background-image: url("Images/services.jpg");
+    overflow: hidden; /* Hide overflow to prevent blurred overlay from being visible outside */
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Images/services.jpg");
+    filter: blur(90px); /* Apply a 4px blur to the pseudo-element's background image */
+    z-index: -5; /* Place the pseudo-element behind the content */
+}
+
+.section h1,
+.section h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    /* font-family: Poppins; */
+}
+.section .row h2{
+    position: relative;
+    right: 30px;
+}
+.section h1 {
+    
+    position: relative;
+    /* border-bottom:4px solid #2a486c; */
+    
+}
+.section h1::after{
+  content: '';
+    position: absolute;
+    left: 470px;
+    bottom: -10px;
+    background-color: #2a486c;
+    border-radius: 0 5px 0 5px;
+    height: 5px;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+/* Horezantel line with animation */
+
+/* .section h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 7px; 
+    background-color: #2a486c;
+    position: absolute;
+    bottom: -12px; 
+    left: 50%;
+    transform: translateX(-50%);
+    animation: lineAnimation 2s linear infinite;
+    border-radius: 7px;
+  } */
+
+  /* @keyframes lineAnimation {
+    0%, 100% {
+      transform: translateX(-50%) scaleX(1);
+    }
+    50% {
+      transform: translateX(-50%) scaleX(1.5);
+    }
+  } */
+
+.section .color{
+    color: #dfb630;
+}
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-6-30 {
+    max-width: 30%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0;
+    position: relative;
+    right: 90px;
+}
+
+.col-md-6-70 {
+    /* max-width: 70%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    position: relative;
+    left: 80px;
+}
+.col-md-6-20{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+
+
+/* Start  Circular section */
+
+
+.section1 {
+    position: relative;
+    height: 700px;
+    background-image: url('Images/feed.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* .section1:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2a486c;
+  opacity: .6;
+  z-index: -1;
+  overflow: hidden;
+
+} */
+
+.section1 h5 {
+    text-align: center;
+    color: white;
+}
+.section1 h1 {
+    text-align: center;
+    color: #dfb630;
+    position: relative;
+    font-weight: 500;
+    font-size: bold;
+}
+
+.section1 h1::after{
+  content: '';
+    position: absolute;
+    left: 420px;
+    bottom: -10px;
+    background-color: #ffffff;
+    border-radius: 0 5px 0 5px;
+    height: 5px;
+    box-sizing: border-box;
+    width: 200px;
+}
+.section1 p{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .section1 button{
+    color: #000000;
+    border:2px solid #dfb630;
+    margin-top: 50px;
+    margin-left: 450px;
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .9s ease;
+  }
+  .section1 button:hover{
+    padding: 12px 35px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #dfb630;
+  }
+
+  @keyframes lineAnimation {
+    0%, 100% {
+      transform: translateX(-50%) scaleX(1);
+    }
+    50% {
+      transform: translateX(-50%) scaleX(1.5);
+    }
+  }
+
+
+
+  @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+.all{
+  display: flex;
+  margin-left: 250px;
+}
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  margin-top: 70px;
+  margin-left: 90px;
+  width: 150px;
+  height: 150px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: #212020;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #dfb630;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(153deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(153deg);
+  }
+}
+
+/* 2nd bar */
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #dfb630;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(117deg);
+}
+
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(117deg);
+  }
+}
+
+/* 3rd progress bar */
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #dfb630;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill-3{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+
+
+
+/* clnder section */
+.section3 {
+  padding: 20px 0;
+}
+.section3 h1 {
+  text-align: left;
+  color: #f5a623;
+}
+.section3 h2 {
+  color: #333;
+}
+.section3 hr {
+  border-top: 2px solid #f5a623;
+  width: 50px;
+  margin: 20px auto;
+}
+.section3 .row {
+  display: flex;
+}
+.event {
+  margin: 20px 0;
+  overflow: hidden;
+
+}
+.event h3 {
+  color: #f5a623;
+}
+.event img {
+  max-width: 100%;
+  height: auto;
+  transition: all ease 1s;
+}
+.event img:hover{
+  scale: 1.1;
+}
+.prayer-times {
+  margin-top: 50px;
+}
+.prayer-times th,
+.prayer-times td {
+  text-align: center;
+}
+.prayer-times th {
+  background-color: #f5a623;
+  color: white;
+}
+.prayer-times td:first-child {
+  font-weight: bold;
+}
+.table {
+  width: 400px;
+  height: 600px;
+  float: right;
+  position: relative;
+  margin-top: 30px;
+}
+.cool-1{
+  width: 60%;
+  float: left;
+}
+.cool-2{
+  width: 30%;
+  float: right;
+  
+}
+
+.footer {
+  max-width: 100%;
+  background-color: #333;
+  height: 280px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-logo {
+  flex: 1;
+}
+.footer p{
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.footer-content {
+  flex: 3;
+}
+.footer-content p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-links .quick-links,
+.footer-links .useful-links {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  left: 200px;
+}
+.footer-links h3 {
+  color: #f5a623;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  /* margin-bottom: 10px; */
+  margin-top: 20px;
+
+}
+.footer-contact {
+  flex: 2;
+  margin-left: 250px;
+}
+.footer-contact h3 {
+  color: #f5a623;
+  margin-top: 20px;
+  
+}
+.footer-contact p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 40px;
+  line-height: 30px;
+}
+
+/* Copyright and Social Links Styles */
+.footer-copyright {
+  flex: 1;
+  text-align: left;
+
+}
+.footer-social {
+  flex: 1;
+  text-align: right;
+}
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.footer4{
+  height: 50px;
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+}
